@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waeschmarie</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" media="">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="">
+    <link type="text/css" rel="stylesheet" href="assets/css/l2licons.css" media="">
+    <link type="text/css" rel="stylesheet" href="assets/css/fontawesome-all.css" media="">
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <link rel="preload" as="font" href="assets/fonts/gothamblack-regular-webfont.woff2" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/gothamblack-regular-webfont.woff" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/gothambook-regular-webfont.woff2" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/gothambook-regular-webfont.woff" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/l2l.woff" type="font/woff" crossorigin="">
+</head>
+
+<body id="body_area">
+
+    <div class="signin align-items-center d-flex px-3 px-md-0">
+        <form class="col-md-4 form-signin custom-form px-md-5 py-4 rounded-xl bg-white" id="" name="frm_login"
+            method="post" action="" novalidate="novalidate" onsubmit="return false">
+            <a href="index.html"><img class="mb-3 d-table mx-auto" width="160" src="assets/images/name-logo.png"
+                    alt="Waeschmarie"></a>
+
+
+
+            <div class="form-group mb-3">
+                <label for="login_email_address">Email</label>
+                <input class="form-control form-control-lg" type="text" name="login_email_address" placeholder="">
+            </div>
+            <div class="form-group mb-3">
+                <label for="login_password">Password</label>
+                <input class="form-control form-control-lg" type="password" name="login_password" placeholder="">
+            </div>
+            <div class="form-group mb-3">
+                <div class="form-row align-items-center">
+                    <div class="col-6">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="login_remember"
+                                name="login_remember" value="remember">
+                            <label class="custom-control-label text-capitalize" for="login_remember">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="col-6 text-right"><button type="button" data-toggle="modal" data-target="#forgotModal"
+                            class="bg-transparent border-0 small">Forgot password</button></div>
+                </div>
+            </div>
+
+            <button type="submit" id="btn_login" name="btn_login"
+                class="btn btn-primary btn-lg rounded-pill py-2 px-5 mx-auto mb-3 d-table"><span class="px-5">Sign
+                    in</span></button>
+            <div class="text-center">
+                <a href="" class="btn btn-outline-dark btn-lg rounded-pill py-2 px-5 mb-2" type="submit">Create an
+                    account</a>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="assets/js/script.js" charset="UTF-8"></script>
+
+
+</body>
+
+</html>
