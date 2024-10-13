@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waeschmarie</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" media="">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="">
+    <link type="text/css" rel="stylesheet" href="assets/css/l2licons.css" media="">
+    <link type="text/css" rel="stylesheet" href="assets/css/fontawesome-all.css" media="">
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <link rel="preload" as="font" href="assets/fonts/gothamblack-regular-webfont.woff2" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/gothamblack-regular-webfont.woff" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/gothambook-regular-webfont.woff2" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/gothambook-regular-webfont.woff" type="font/woff" crossorigin="">
+    <link rel="preload" as="font" href="assets/fonts/l2l.woff" type="font/woff" crossorigin="">
+</head>
+
+<body id="body_area">
+
+
+
+    <div class="signin align-items-center d-flex px-3 px-md-0 register-content py-3y-3" style="background: #efefef url(assets/images/bg-login-bubbles.png) left bottom no-repeat;">
+        <form id="frm_register" name="frm_register" method="post" action="#"
+            class="col-md-8 form-signin custom-form px-md-5 py-4 rounded-xl bg-white my-md-5 my-3" data-gtm-form-interact-id="0">
+            <input type="hidden" id="_token" name="_token" value="">
+            <input type="hidden" id="town" name="town" value="">
+            <input type="hidden" value="+44" readonly="">
+            <input type="hidden" id="action" name="action" value="register">
+            <input type="hidden" id="social_id" name="social_id" value="">
+            <input type="hidden" id="type" name="type" value="">
+
+            <a href="index.html"><img class="mb-3 d-table mx-auto" width="160" src="assets/images/text-logo.png"
+                    alt="Waeschmarie"></a>
+            <div class="hide-area reg-area"></div>
+
+
+            <div class="row">
+
+
+                <div class="col-md-6">
+                    <div class="form-group mb-2 mb-md-3">
+                        <label>First Name</label>
+                        <input class="form-control form-control-lg req" type="text"
+                            data-error-message="Please enter first name" placeholder="First Name" id="reg_first_name"
+                            name="reg_first_name" value="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-2 mb-md-3">
+                        <label>Last Name</label>
+                        <input class="form-control form-control-lg req" data-error-message="Please enter last name"
+                            placeholder="Last Name" id="reg_last_name" name="reg_last_name" value="">
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group mb-2 mb-md-3">
+                        <label>Email</label>
+                        <input type="email" class="form-control form-control-lg req"
+                            data-error-message="Please enter email address"
+                            data-invalid-error-message="Please enter valid email address" id="reg_email_address"
+                            name="reg_email_address" placeholder="Email Address" value="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-2 mb-md-3">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control form-control-lg req" aria-label="password"
+                                data-error-message="Please enter password" placeholder="Password" id="reg_password"
+                                name="reg_password" value="">
+                            <div class="input-group-append" id="btn_password_show">
+                                <span class="input-group-text"><i class="fa fa-eye"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group mb-2 mb-md-3 ">
+                        <label>Phone</label>
+                        <div class="input-group ">
+                            <input class="form-control form-control-lg only-number req" type="tel"
+                                data-error-message="Please enter phone number" placeholder="03337*****"
+                                id="reg_phone_number" name="reg_phone_number" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mb-2 mb-md-3">
+                        <label>Search for your area to see collections in your area</label>
+                        <input class="form-control form-control-lg req" type="text"
+                            data-error-message="Please enter postcode" placeholder="Start with your street..."
+                            id="register_post_code" name="register_post_code" data-gtm-form-interact-field-id="0">
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group mb-2 mb-md-3">
+                        <label>Specify any extra address details</label>
+                        <input type="text" data-error-message="Please enter address"
+                            placeholder="Please specify any extra address details"
+                            class="form-control form-control-lg p-field address-building " id="reg_address2"
+                            name="reg_address2" data-gtm-form-interact-field-id="1">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-md-12 text-center">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" data-error-message="Please agree to our terms and conditions"
+                        name="term_condition" class="custom-control-input" id="term_condition">
+                    <label class="custom-control-label text-capitalize" for="term_condition">I agree to the Waeschmarie
+                        <a target="_blank" href="#">Terms And
+                            Conditions</a></label>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <button type="button"
+                    class="btn btn-primary rounded-pill py-3 px-5 mx-auto mb-3 d-table my-3 btn-reg-next"
+                    data-next-tab="submit"><span class="px-5">Register</span></button>
+                <div class="text-center">
+                    <a class="btn btn-outline-dark btn-lg rounded-pill py-2 px-5 mb-2" href="sign-in.html">
+                        Login to my Account</a>
+                </div>
+
+            </div>
+
+    </div>
+    </div>
+
+
+    </form>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="assets/js/script.js" charset="UTF-8"></script>
+
+
+</body>
+
+</html>

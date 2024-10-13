@@ -9,6 +9,7 @@
     --main-color: #aacfeb;
     --main-color: #98AFC7;
     --main-color: #eeebdb;
+    --main-color-dark: #cec089;
 }
 
 ::selection {
@@ -1794,10 +1795,10 @@ span.correct {
 
 /* ###### Login ##### */
 .signin {
-    background: #efefef url(../images/bg-login-bubbles.png) left bottom no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
 }
 
 .form-signin {
@@ -1940,7 +1941,7 @@ span.correct {
 }
 
 .page-contact {
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
 }
 
@@ -2412,12 +2413,12 @@ span.correct {
     }
     .page-contact-inner {
         text-align: center;
-        height: 80vh;
+        height: auto;
     }
 
     .page-contact {
         background-size: 150%;
-        background-position: bottom right;
+        background-position: top right;
         padding-top: 50% !important;
     }
 
@@ -2719,3 +2720,170 @@ a{
 /* ps-faqs-section-end */
 
 
+
+/* ps-reviews-section-start */
+.ps-reviews-section {
+    background-color: #ffff;
+}
+.ps-reviews-section h3 {
+    text-align: center;
+}
+.ps-reviews-section .ps-review-box {
+    margin-bottom: 40px;
+    border-radius: 15px;
+    border: 1px solid #7a7a7a;
+    min-height: 250px;
+    height: 100%;
+}
+.ps-reviews-section .ps-review-box h3 {
+    text-align: left;
+}
+.ps-reviews-section .ps-review-box small {
+    font-size: 16px;
+    font-family: 'Futura PT Medium';
+    line-height: 24px;
+    color: #000;
+}
+.ps-reviews-section .ps-review-box span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #6D6D6D;
+}
+.ps-reviews-section .ps-review-box span .fa-calendar-alt {
+    margin-right: 5px;
+}
+.ps-reviews-section .ps-review-box span .fa-star {
+    margin-left: 5px;
+    color: #EA9A00;
+}
+.ps-reviews-section .ps-review-box p {
+    font-size: 18px;
+    font-weight: 400;
+}
+.ps-reviews-section .ps-review-carousel {
+    margin-bottom: 40px;
+}
+.swiper-pagination-bullet{
+    height: 12px !important;
+    width: 12px !important;
+}
+.swiper-pagination-bullet-active {
+    background: black !important;
+}
+
+/* ps-reviews-section-end */
+
+/* about-us-section-start */
+.about-us-section .about-us-left-content {
+    position: relative;
+    background-size: cover;
+}
+.about-us-section .about-us-left-content .play-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #68B0AF;
+    background-color: var(--main-color-dark);
+    font-size: 30px;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.about-us-section .about-us-left-content .play-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 176, 175, 0.8);
+    background-color: var(--main-color-dark);
+    border-radius: 50%;
+    z-index: 1;
+    animation: ripple 1.5s ease-out infinite;
+    animation-delay: 0s;
+    animation-delay: 0.2s;
+}
+.about-us-section .about-us-left-content .play-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color-dark);
+    border-radius: 50%;
+    z-index: 1;
+    animation: ripple-sub 1.5s ease-out infinite;
+    animation-delay: 0s;
+    animation-delay: 0.2s;
+}
+.about-us-section .about-us-left-content .play-icon i {
+    z-index: 3;
+}
+@keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+}
+@keyframes ripple-sub {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.6);
+    }
+}
+.about-us-section .about-us-right-content {
+    background-color: #ffff;
+    padding: 80px 100px 80px 113px;
+}
+.about-us-section .about-us-right-content p {
+    text-align: justify;
+}
+
+
+
+/* =============== Media Queries ================= */
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+    .about-us-section .about-us-left-content .play-icon {
+        top: unset;
+        bottom: -55px;
+        right: calc(50% - 55px);
+        transform: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-us-section .about-us-left-content {
+        height: 500px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about-us-section .about-us-left-content {
+        height: 400px;
+    }
+    .about-us-section .about-us-right-content {
+        padding: 100px 30px 100px 70px;
+    }
+}
+@media (min-width: 320px) and (max-width: 575.98px) {
+    .about-us-section .about-us-left-content {
+        height: 300px;
+    }
+    .about-us-section .about-us-right-content {
+        padding: 60px 30px;
+    }
+}

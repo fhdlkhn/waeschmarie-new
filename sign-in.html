@@ -25,7 +25,8 @@
 
 <body id="body_area">
 
-    <div class="signin align-items-center d-flex px-3 px-md-0">
+    <div class="signin align-items-center d-flex px-3 px-md-0"
+        style="background: #efefef url(assets/images/bg-login-bubbles.png) left bottom no-repeat;">
         <form class="col-md-4 form-signin custom-form px-md-5 py-4 rounded-xl bg-white" id="" name="frm_login"
             method="post" action="" novalidate="novalidate" onsubmit="return false">
             <a href="index.html"><img class="mb-3 d-table mx-auto" width="160" src="assets/images/name-logo.png"
@@ -59,10 +60,46 @@
                 class="btn btn-primary btn-lg rounded-pill py-2 px-5 mx-auto mb-3 d-table"><span class="px-5">Sign
                     in</span></button>
             <div class="text-center">
-                <a href="" class="btn btn-outline-dark btn-lg rounded-pill py-2 px-5 mb-2" type="submit">Create an
+                <a href="register.html" class="btn btn-outline-dark btn-lg rounded-pill py-2 px-5 mb-2"
+                    type="submit">Create an
                     account</a>
             </div>
         </form>
+    </div>
+
+
+    <!-- ---- modal ---- -->
+
+    <div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalCenterTitle"
+        aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <form class="custom-form" id="frm_forgot" name="frm_forgot" method="post"
+                    action="#" novalidate="novalidate">
+                    <div class="modal-header bg-primary border-light">
+                        <h5 class="modal-title font-weight-bold" id="discountModalCenterTitle">Forgot Password?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="order-form">
+                            <p class="h6">Just let us know Your Registered Email</p>
+                            <div id="msg_box"></div>
+                            <div class="form-group mb-0">
+                                <label for="login_password">Password</label>
+                                <input class="form-control form-control-lg" placeholder="Enter Your Email Address"
+                                    id="forgot_email_address" name="forgot_email_address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-light">
+                        <button type="submit" id="btn_forgot" name="btn_forgot"
+                            class="btn btn-dark btn-block btn-lg">Send Me My Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 
