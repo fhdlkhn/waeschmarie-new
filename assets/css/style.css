@@ -262,7 +262,7 @@ button:focus {
 }
 
 .crowd-header img,
-.crowd-header i.l2l-gift {
+.crowd-header i.icon-gift {
     width: 40px;
     color: #fff;
 }
@@ -449,6 +449,8 @@ button:focus {
 
 .top-section-img {
     position: absolute;
+    width: 610px;
+    height: 500px;
     bottom: 0;
     right: 10px;
 }
@@ -815,7 +817,9 @@ button:focus {
     text-transform: uppercase;
     margin: 0 0 6px;
 }
-
+.dotted{
+    position: relative;
+}
 .dotted:after {
     position: absolute;
     top: 50%;
@@ -967,7 +971,7 @@ button:focus {
     padding: 0 15px;
 }
 
-.l2l-app-icon {
+.icon-app-icon {
     margin-bottom: 30px;
 }
 
@@ -1480,7 +1484,7 @@ span.correct {
 }
 
 .price-summary .minus {
-    background: var(--main-color);
+    background: var(--main-color-dark);
 }
 
 .cart-list {
@@ -1994,12 +1998,12 @@ span.correct {
 
 @media(max-width:991px) {
     .navbar-toggler {
-        background-color: #000;
+        /* background-color: #000; */
 
     }
 
     .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
     #navbarResponsive {
@@ -2056,7 +2060,7 @@ span.correct {
         font-size: 1.25rem;
     }
 
-    .price-estimate-container {
+    /* .price-estimate-container {
         display: none;
         position: fixed;
         top: 0;
@@ -2064,7 +2068,7 @@ span.correct {
         background-color: #fff;
         z-index: 99999;
         max-height: 100%;
-    }
+    } */
 
     .price-estimate-container button.close {
         opacity: 1;
@@ -2222,7 +2226,7 @@ span.correct {
         margin-bottom: 10px;
     }
 
-    .l2l-trustpilot-widget {
+    .icon-trustpilot-widget {
         height: 100px;
     }
 
@@ -2422,15 +2426,15 @@ span.correct {
         padding-top: 50% !important;
     }
 
-    .l2l-table {
+    .icon-table {
         border: 0;
     }
 
-    .l2l-table caption {
+    .icon-table caption {
         font-size: 1.3em;
     }
 
-    .l2l-table thead {
+    .icon-table thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -2441,20 +2445,20 @@ span.correct {
         width: 1px;
     }
 
-    .l2l-table tr {
+    .icon-table tr {
         border-bottom: 3px solid #ddd;
         display: block;
         margin-bottom: .625em;
     }
 
-    .l2l-table td {
+    .icon-table td {
         border-bottom: 1px solid #ddd;
         display: block;
         font-size: .8em;
         text-align: right;
     }
 
-    .l2l-table td::before {
+    .icon-table td::before {
         /*
         * aria-label has no advantage, it won't be read inside a table
         content: attr(aria-label);
@@ -2465,7 +2469,7 @@ span.correct {
         text-transform: uppercase;
     }
 
-    .l2l-table td:last-child {
+    .icon-table td:last-child {
         border-bottom: 0;
     }
 }
@@ -2855,8 +2859,14 @@ a{
 }
 
 
+.professional__section_img{
+    width: 300px;
+    height: 660px;
+}
 
-/* =============== Media Queries for aboutus ================= */
+
+
+/* =============== Media Queries ================= */
 
 @media (min-width: 320px) and (max-width: 991.98px) {
     .about-us-section .about-us-left-content .play-icon {
@@ -2885,5 +2895,16 @@ a{
     }
     .about-us-section .about-us-right-content {
         padding: 60px 30px;
+    }
+}
+
+
+/* ====================== general Media Queries ================= */
+
+@media (max-width: 768px){
+    .professional__section_img{
+        height: 300px;
+        width: auto;
+        margin: 20px auto;
     }
 }
